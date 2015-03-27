@@ -1,0 +1,65 @@
+Fragment shader error:
+0(15) : warning C7502: OpenGL does not allow type suffix 'f' on constant literals in versions below 120
+0(15) : warning C7502: OpenGL does not allow type suffix 'f' on constant literals in versions below 120
+0(15) : warning C7502: OpenGL does not allow ty
+//////////////////////////////////////////////////////////////////////////////////////////
+//
+// default frament shader for solid colours
+//
+
+
+// inputs
+varying vec2 uv_;
+varying vec3 normal_;
+varying vec3 camera_pos_;
+varying vec4 color_;
+
+void main() {
+  vec3 nnormal = normalize(normal_);
+  vec3 npos = vec3(0.0f,0.0f,0.0f);
+
+  vec3 diffuse_light = vec3(0.3f,0.1f,0.2f);
+  vec4 diffuse = vec4(0.48f, 0.337f, 0.062f,1.0f);
+    
+    vec3 light_pos = vec3(0.0f,0.0f,0.0f);
+    vec3 light_direction = vec3(0.70f,0.0f,0.0f);
+    vec3 light_color = vec3(1.0f,0.0f,0.0f);
+    vec3 light_atten = vec3(0.3f,0.4f,0.2f);
+
+    float diffuse_factor = max(dot(light_direction, nnormal), 0.0);
+    diffuse_light += diffuse_factor * light_color;
+  
+
+  gl_FragColor = vec4(diffuse.xyz * diffuse_light, 1.0);
+
+}
+
+
+
+
+
+program errors
+Fragment info
+-------------
+0(15) : warning C7502: OpenGL does not allow type suffix 'f' on constant literals in versions below 120
+0(15) : warning C7502: OpenGL does not allow type suffix 'f' on constant literals in versions below 120
+0(15) : warning C7502: OpenGL does not allow type suffix 'f' on constant literals in versions below 120
+0(17) : warning C7502: OpenGL does not allow type suffix 'f' on constant literals in versions below 120
+0(17) : warning C7502: OpenGL does not allow type suffix 'f' on constant literals in versions below 120
+0(17) : warning C7502: OpenGL does not allow type suffix 'f' on constant literals in versions below 120
+0(18) : warning C7502: OpenGL does not allow type suffix 'f' on constant literals in versions below 120
+0(18) : warning C7502: OpenGL does not allow type suffix 'f' on constant literals in versions below 120
+0(18) : warning C7502: OpenGL does not allow type suffix 'f' on constant literals in versions below 120
+0(18) : warning C7502: OpenGL does not allow type suffix 'f' on constant literals in versions below 120
+0(20) : warning C7502: OpenGL does not allow type suffix 'f' on constant literals in versions below 120
+0(20) : warning C7502: OpenGL does not allow type suffix 'f' on constant literals in versions below 120
+0(20) : warning C7502: OpenGL does not allow type suffix 'f' on constant literals in versions below 120
+0(21) : warning C7502: OpenGL does not allow type suffix 'f' on constant literals in versions below 120
+0(21) : warning C7502: OpenGL does not allow type suffix 'f' on constant literals in versions below 120
+0(21) : warning C7502: OpenGL does not allow type suffix 'f' on constant literals in versions below 120
+0(22) : warning C7502: OpenGL does not allow type suffix 'f' on constant literals in versions below 120
+0(22) : warning C7502: OpenGL does not allow type suffix 'f' on constant literals in versions below 120
+0(22) : warning C7502: OpenGL does not allow type suffix 'f' on constant literals in versions below 120
+0(23) : warning C7502: OpenGL does not allow type suffix 'f' on constant literals in versions below 120
+0(23) : warning C7502: OpenGL does not allow type suffix 'f' on constant literals in versions below 120
+0(23) : warning C7502: OpenGL does not allow type suffix 'f' on constant literals in versions below 120

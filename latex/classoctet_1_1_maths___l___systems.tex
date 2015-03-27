@@ -1,0 +1,435 @@
+\hypertarget{classoctet_1_1_maths___l___systems}{\section{octet\+:\+:Maths\+\_\+\+L\+\_\+\+Systems Class Reference}
+\label{classoctet_1_1_maths___l___systems}\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+}
+
+
+{\ttfamily \#include $<$Maths\+\_\+\+L\+\_\+\+Systems.\+h$>$}
+
+Inheritance diagram for octet\+:\+:Maths\+\_\+\+L\+\_\+\+Systems\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classoctet_1_1_maths___l___systems}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classoctet_1_1_maths___l___systems_aa121ca98ebab9c5c8907c444ae7a770d}{Maths\+\_\+\+L\+\_\+\+Systems} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em this is called when we construct the class before everything is initialised. \end{DoxyCompactList}\item 
+\hyperlink{classoctet_1_1_maths___l___systems_a4ac337cbc5e67002f2bde5b44fa50c14}{$\sim$\+Maths\+\_\+\+L\+\_\+\+Systems} ()
+\item 
+void \hyperlink{classoctet_1_1_maths___l___systems_a71d9012fc0fbbcd785592af8e129b338}{app\+\_\+init} ()
+\begin{DoxyCompactList}\small\item\em this is called once Open\+G\+L is initialized \end{DoxyCompactList}\item 
+void \hyperlink{classoctet_1_1_maths___l___systems_a8fa46e98724076f18569e49bcbc7897d}{draw\+\_\+world} (int x, int y, int w, int h)
+\begin{DoxyCompactList}\small\item\em this is called to draw the world \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+vec3 \hyperlink{classoctet_1_1_maths___l___systems_ad5454ccdf6a5def2e7ff79ea0a729117}{matrixmult} (mat4t objm, vec3 direction)
+\begin{DoxyCompactList}\small\item\em This function is used to calu the direction of the camera. \end{DoxyCompactList}\item 
+void \hyperlink{classoctet_1_1_maths___l___systems_a738c24b3bbd3bc31d9956eba83bcf90b}{user\+\_\+cont} ()
+\begin{DoxyCompactList}\small\item\em The user controls. \end{DoxyCompactList}\item 
+int \hyperlink{classoctet_1_1_maths___l___systems_ab9f480dfa7b0201bd097df12d02969ca}{countnumofstep} ()
+\begin{DoxyCompactList}\small\item\em This function is used to count the number of variable Symbols in the prarmiter to know the number of verts and indices. \end{DoxyCompactList}\item 
+int \hyperlink{classoctet_1_1_maths___l___systems_aa34870a929d313d545957a6845f82a73}{countnumofbranches} ()
+\begin{DoxyCompactList}\small\item\em This function is used to count the number of \mbox{[}\mbox{]} in the prarmiter to know the number of verts and indices. \end{DoxyCompactList}\item 
+void \hyperlink{classoctet_1_1_maths___l___systems_a3b6f86a6edb2b7728eafb97f6b12a6b9}{interp\+\_\+param} ()
+\begin{DoxyCompactList}\small\item\em This function converts the paramiter into the mesh. \end{DoxyCompactList}\item 
+void \hyperlink{classoctet_1_1_maths___l___systems_a7e62b7c37a290a739db142859ab15292}{getrule} (int rule\+\_\+number)
+\begin{DoxyCompactList}\small\item\em This function is used to fetch the rule from the file. \end{DoxyCompactList}\item 
+void \hyperlink{classoctet_1_1_maths___l___systems_aa00aaad8e6c5702c44cc2ffab631c4a8}{iter} (int times)
+\begin{DoxyCompactList}\small\item\em This function itirates the current paramiter the number of times indicated and then builds the tree. \end{DoxyCompactList}\item 
+void \hyperlink{classoctet_1_1_maths___l___systems_adbd8eaa9e35cc2ff4679bab1be952af9}{create\+\_\+base} ()
+\begin{DoxyCompactList}\small\item\em This function creats the base for the scene. \end{DoxyCompactList}\item 
+void \hyperlink{classoctet_1_1_maths___l___systems_a8f2e60ebe4f860361a4f99357d4fb240}{Init\+Day\+Night\+Cycle} ()
+\begin{DoxyCompactList}\small\item\em This function is used to init the day night cycle. \end{DoxyCompactList}\item 
+void \hyperlink{classoctet_1_1_maths___l___systems_adcc1d9dedb89366b1075b72ad79e972b}{Day\+Night\+Cycle} ()
+\begin{DoxyCompactList}\small\item\em This function deals with the actual rotation of the dynightcycle node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ref$<$ visual\+\_\+scene $>$ \hyperlink{classoctet_1_1_maths___l___systems_aca3393864ce7f6347a7d45eac2f21950}{app\+\_\+scene}
+\begin{DoxyCompactList}\small\item\em The visual scene. \end{DoxyCompactList}\item 
+F\+I\+L\+E $\ast$ \hyperlink{classoctet_1_1_maths___l___systems_a8a58838e93bde57d4d7b1a35cef6e4f2}{L\+\_\+\+Rules}
+\begin{DoxyCompactList}\small\item\em The file pointer that we read from. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{classoctet_1_1_maths___l___systems_a49d998a086a775f7ae692be076e5175d}{current\+\_\+param}
+\begin{DoxyCompactList}\small\item\em The L-\/\+System the we are currently making. \end{DoxyCompactList}\item 
+int \hyperlink{classoctet_1_1_maths___l___systems_af66610095ffa2515df4b7a821783792d}{number\+\_\+of\+\_\+rules}
+\begin{DoxyCompactList}\small\item\em The number of rules this L-\/\+System has. \end{DoxyCompactList}\item 
+float \hyperlink{classoctet_1_1_maths___l___systems_a0b97e0018e7e59be5d0e8c268ed85a68}{angle}
+\begin{DoxyCompactList}\small\item\em The angle of rotation for the + and -\/ of the L\+\_\+\+System. \end{DoxyCompactList}\item 
+float \hyperlink{classoctet_1_1_maths___l___systems_a3baf90aa95cd3c535fba893641f0cd1e}{scale}
+\begin{DoxyCompactList}\small\item\em The scaling factor. \end{DoxyCompactList}\item 
+char \hyperlink{classoctet_1_1_maths___l___systems_acd98087b379a1b860b1631a6224470e9}{symbols} \mbox{[}5\mbox{]}
+\begin{DoxyCompactList}\small\item\em The symbols on the current L-\/\+System. \end{DoxyCompactList}\item 
+hash\+\_\+map$<$ char, char $\ast$ $>$ \hyperlink{classoctet_1_1_maths___l___systems_a5c57f1806d42933de86a1d2b2693eb26}{rules}
+\begin{DoxyCompactList}\small\item\em The map between the symbols and the rules. \end{DoxyCompactList}\item 
+\hyperlink{classoctet_1_1_l__stack}{L\+\_\+stack} $\ast$ \hyperlink{classoctet_1_1_maths___l___systems_a565e71fcec0d1a4d0cca48e99c3b6aca}{var\+\_\+stack}
+\begin{DoxyCompactList}\small\item\em The stack variable in which we push and pop the states. \end{DoxyCompactList}\item 
+float \hyperlink{classoctet_1_1_maths___l___systems_a3ffafcbe960edcaf6255cc3be7fc10af}{rad}
+\begin{DoxyCompactList}\small\item\em The radious of the circle. \end{DoxyCompactList}\item 
+float \hyperlink{classoctet_1_1_maths___l___systems_a44da9fdd3c673cac831cf894aa02ec46}{exel}
+\begin{DoxyCompactList}\small\item\em The extrution length for the cyln. \end{DoxyCompactList}\item 
+scene\+\_\+node $\ast$ \hyperlink{classoctet_1_1_maths___l___systems_ab7bffab6b7ca8de169cccc0dc999a130}{node}
+\begin{DoxyCompactList}\small\item\em The node for the mesh. \end{DoxyCompactList}\item 
+float \hyperlink{classoctet_1_1_maths___l___systems_acd18538c7b279c111b52f3286be824b3}{initrad}
+\begin{DoxyCompactList}\small\item\em The initial radious. \end{DoxyCompactList}\item 
+float \hyperlink{classoctet_1_1_maths___l___systems_a0c7beee6e733f6f1912807f2f2912fe8}{initexel}
+\begin{DoxyCompactList}\small\item\em The initial extrution length. \end{DoxyCompactList}\item 
+int \hyperlink{classoctet_1_1_maths___l___systems_a320a9278ae12e7bed6714027ea64a334}{curr\+\_\+itr}
+\begin{DoxyCompactList}\small\item\em The current iteration number. \end{DoxyCompactList}\item 
+bool \hyperlink{classoctet_1_1_maths___l___systems_ab9e326a382610ba6088d52a966ec4d9e}{done}
+\begin{DoxyCompactList}\small\item\em true if the tree is build \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{classoctet_1_1_maths___l___systems_aec92a84b2e6a408ffe7bdf34ce3285e4}{init\+\_\+param}
+\begin{DoxyCompactList}\small\item\em the initial paramiter for the system \end{DoxyCompactList}\item 
+bool \hyperlink{classoctet_1_1_maths___l___systems_a656e4a1c5ecad3857ed35fa9b7d27a53}{isday}
+\begin{DoxyCompactList}\small\item\em true is its day, false if night \end{DoxyCompactList}\item 
+int \hyperlink{classoctet_1_1_maths___l___systems_a1b1840ca480629312bfa309681d6913c}{nightnumber}
+\begin{DoxyCompactList}\small\item\em the number of nights that have passed \end{DoxyCompactList}\item 
+bool \hyperlink{classoctet_1_1_maths___l___systems_a247062240824f418a425518fdc0d7e58}{enemiesrecycled}
+\begin{DoxyCompactList}\small\item\em true if the enemies have been placed in the game , false if not (only used a trigger) \end{DoxyCompactList}\item 
+float \hyperlink{classoctet_1_1_maths___l___systems_a6afebf4038c4d8b798e7e35d2b0a9652}{gamedaytime}
+\begin{DoxyCompactList}\small\item\em The game day night time (0-\/360) \end{DoxyCompactList}\item 
+scene\+\_\+node $\ast$ \hyperlink{classoctet_1_1_maths___l___systems_afdbae311939cba356a0d6fc5c39d1a66}{daynightnode}
+\begin{DoxyCompactList}\small\item\em The scene node for the day night cycle objects (sun and moon) \end{DoxyCompactList}\item 
+param\+\_\+shader $\ast$ \hyperlink{classoctet_1_1_maths___l___systems_a446a9be9766e7557d06f243a030ab9bf}{shader}
+\begin{DoxyCompactList}\small\item\em The shader for the tree. \end{DoxyCompactList}\item 
+material $\ast$ \hyperlink{classoctet_1_1_maths___l___systems_aa7cca257e626df634fa52b1a85a1e3d8}{mat\+\_\+tree}
+\begin{DoxyCompactList}\small\item\em The material for the tree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classoctet_1_1_maths___l___systems_aa121ca98ebab9c5c8907c444ae7a770d}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!Maths\+\_\+\+L\+\_\+\+Systems@{Maths\+\_\+\+L\+\_\+\+Systems}}
+\index{Maths\+\_\+\+L\+\_\+\+Systems@{Maths\+\_\+\+L\+\_\+\+Systems}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{Maths\+\_\+\+L\+\_\+\+Systems}]{\setlength{\rightskip}{0pt plus 5cm}octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::\+Maths\+\_\+\+L\+\_\+\+Systems (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classoctet_1_1_maths___l___systems_aa121ca98ebab9c5c8907c444ae7a770d}
+
+
+this is called when we construct the class before everything is initialised. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_a4ac337cbc5e67002f2bde5b44fa50c14}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!````~Maths\+\_\+\+L\+\_\+\+Systems@{$\sim$\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\index{````~Maths\+\_\+\+L\+\_\+\+Systems@{$\sim$\+Maths\+\_\+\+L\+\_\+\+Systems}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{$\sim$\+Maths\+\_\+\+L\+\_\+\+Systems}]{\setlength{\rightskip}{0pt plus 5cm}octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::$\sim$\+Maths\+\_\+\+L\+\_\+\+Systems (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classoctet_1_1_maths___l___systems_a4ac337cbc5e67002f2bde5b44fa50c14}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classoctet_1_1_maths___l___systems_a71d9012fc0fbbcd785592af8e129b338}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!app\+\_\+init@{app\+\_\+init}}
+\index{app\+\_\+init@{app\+\_\+init}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{app\+\_\+init}]{\setlength{\rightskip}{0pt plus 5cm}void octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::app\+\_\+init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classoctet_1_1_maths___l___systems_a71d9012fc0fbbcd785592af8e129b338}
+
+
+this is called once Open\+G\+L is initialized 
+
+\hypertarget{classoctet_1_1_maths___l___systems_aa34870a929d313d545957a6845f82a73}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!countnumofbranches@{countnumofbranches}}
+\index{countnumofbranches@{countnumofbranches}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{countnumofbranches}]{\setlength{\rightskip}{0pt plus 5cm}int octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::countnumofbranches (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_aa34870a929d313d545957a6845f82a73}
+
+
+This function is used to count the number of \mbox{[}\mbox{]} in the prarmiter to know the number of verts and indices. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_ab9f480dfa7b0201bd097df12d02969ca}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!countnumofstep@{countnumofstep}}
+\index{countnumofstep@{countnumofstep}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{countnumofstep}]{\setlength{\rightskip}{0pt plus 5cm}int octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::countnumofstep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_ab9f480dfa7b0201bd097df12d02969ca}
+
+
+This function is used to count the number of variable Symbols in the prarmiter to know the number of verts and indices. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_adbd8eaa9e35cc2ff4679bab1be952af9}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!create\+\_\+base@{create\+\_\+base}}
+\index{create\+\_\+base@{create\+\_\+base}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{create\+\_\+base}]{\setlength{\rightskip}{0pt plus 5cm}void octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::create\+\_\+base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_adbd8eaa9e35cc2ff4679bab1be952af9}
+
+
+This function creats the base for the scene. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_adcc1d9dedb89366b1075b72ad79e972b}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!Day\+Night\+Cycle@{Day\+Night\+Cycle}}
+\index{Day\+Night\+Cycle@{Day\+Night\+Cycle}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{Day\+Night\+Cycle}]{\setlength{\rightskip}{0pt plus 5cm}void octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::\+Day\+Night\+Cycle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_adcc1d9dedb89366b1075b72ad79e972b}
+
+
+This function deals with the actual rotation of the dynightcycle node. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_a8fa46e98724076f18569e49bcbc7897d}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!draw\+\_\+world@{draw\+\_\+world}}
+\index{draw\+\_\+world@{draw\+\_\+world}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{draw\+\_\+world}]{\setlength{\rightskip}{0pt plus 5cm}void octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::draw\+\_\+world (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{w, }
+\item[{int}]{h}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classoctet_1_1_maths___l___systems_a8fa46e98724076f18569e49bcbc7897d}
+
+
+this is called to draw the world 
+
+\hypertarget{classoctet_1_1_maths___l___systems_a7e62b7c37a290a739db142859ab15292}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!getrule@{getrule}}
+\index{getrule@{getrule}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{getrule}]{\setlength{\rightskip}{0pt plus 5cm}void octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::getrule (
+\begin{DoxyParamCaption}
+\item[{int}]{rule\+\_\+number}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_a7e62b7c37a290a739db142859ab15292}
+
+
+This function is used to fetch the rule from the file. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_a8f2e60ebe4f860361a4f99357d4fb240}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!Init\+Day\+Night\+Cycle@{Init\+Day\+Night\+Cycle}}
+\index{Init\+Day\+Night\+Cycle@{Init\+Day\+Night\+Cycle}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{Init\+Day\+Night\+Cycle}]{\setlength{\rightskip}{0pt plus 5cm}void octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::\+Init\+Day\+Night\+Cycle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_a8f2e60ebe4f860361a4f99357d4fb240}
+
+
+This function is used to init the day night cycle. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_a3b6f86a6edb2b7728eafb97f6b12a6b9}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!interp\+\_\+param@{interp\+\_\+param}}
+\index{interp\+\_\+param@{interp\+\_\+param}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{interp\+\_\+param}]{\setlength{\rightskip}{0pt plus 5cm}void octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::interp\+\_\+param (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_a3b6f86a6edb2b7728eafb97f6b12a6b9}
+
+
+This function converts the paramiter into the mesh. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_aa00aaad8e6c5702c44cc2ffab631c4a8}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!iter@{iter}}
+\index{iter@{iter}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{iter}]{\setlength{\rightskip}{0pt plus 5cm}void octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::iter (
+\begin{DoxyParamCaption}
+\item[{int}]{times}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_aa00aaad8e6c5702c44cc2ffab631c4a8}
+
+
+This function itirates the current paramiter the number of times indicated and then builds the tree. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_ad5454ccdf6a5def2e7ff79ea0a729117}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!matrixmult@{matrixmult}}
+\index{matrixmult@{matrixmult}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{matrixmult}]{\setlength{\rightskip}{0pt plus 5cm}vec3 octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::matrixmult (
+\begin{DoxyParamCaption}
+\item[{mat4t}]{objm, }
+\item[{vec3}]{direction}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_ad5454ccdf6a5def2e7ff79ea0a729117}
+
+
+This function is used to calu the direction of the camera. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_a738c24b3bbd3bc31d9956eba83bcf90b}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!user\+\_\+cont@{user\+\_\+cont}}
+\index{user\+\_\+cont@{user\+\_\+cont}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{user\+\_\+cont}]{\setlength{\rightskip}{0pt plus 5cm}void octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::user\+\_\+cont (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_a738c24b3bbd3bc31d9956eba83bcf90b}
+
+
+The user controls. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classoctet_1_1_maths___l___systems_a0b97e0018e7e59be5d0e8c268ed85a68}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!angle@{angle}}
+\index{angle@{angle}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{angle}]{\setlength{\rightskip}{0pt plus 5cm}float octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::angle\hspace{0.3cm}{\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_a0b97e0018e7e59be5d0e8c268ed85a68}
+
+
+The angle of rotation for the + and -\/ of the L\+\_\+\+System. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_aca3393864ce7f6347a7d45eac2f21950}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!app\+\_\+scene@{app\+\_\+scene}}
+\index{app\+\_\+scene@{app\+\_\+scene}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{app\+\_\+scene}]{\setlength{\rightskip}{0pt plus 5cm}ref$<$ visual\+\_\+scene $>$ octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::app\+\_\+scene\hspace{0.3cm}{\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_aca3393864ce7f6347a7d45eac2f21950}
+
+
+The visual scene. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_a320a9278ae12e7bed6714027ea64a334}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!curr\+\_\+itr@{curr\+\_\+itr}}
+\index{curr\+\_\+itr@{curr\+\_\+itr}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{curr\+\_\+itr}]{\setlength{\rightskip}{0pt plus 5cm}int octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::curr\+\_\+itr\hspace{0.3cm}{\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_a320a9278ae12e7bed6714027ea64a334}
+
+
+The current iteration number. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_a49d998a086a775f7ae692be076e5175d}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!current\+\_\+param@{current\+\_\+param}}
+\index{current\+\_\+param@{current\+\_\+param}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{current\+\_\+param}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::current\+\_\+param\hspace{0.3cm}{\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_a49d998a086a775f7ae692be076e5175d}
+
+
+The L-\/\+System the we are currently making. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_afdbae311939cba356a0d6fc5c39d1a66}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!daynightnode@{daynightnode}}
+\index{daynightnode@{daynightnode}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{daynightnode}]{\setlength{\rightskip}{0pt plus 5cm}scene\+\_\+node $\ast$ octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::daynightnode\hspace{0.3cm}{\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_afdbae311939cba356a0d6fc5c39d1a66}
+
+
+The scene node for the day night cycle objects (sun and moon) 
+
+\hypertarget{classoctet_1_1_maths___l___systems_ab9e326a382610ba6088d52a966ec4d9e}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!done@{done}}
+\index{done@{done}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{done}]{\setlength{\rightskip}{0pt plus 5cm}bool octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::done\hspace{0.3cm}{\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_ab9e326a382610ba6088d52a966ec4d9e}
+
+
+true if the tree is build 
+
+\hypertarget{classoctet_1_1_maths___l___systems_a247062240824f418a425518fdc0d7e58}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!enemiesrecycled@{enemiesrecycled}}
+\index{enemiesrecycled@{enemiesrecycled}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{enemiesrecycled}]{\setlength{\rightskip}{0pt plus 5cm}bool octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::enemiesrecycled\hspace{0.3cm}{\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_a247062240824f418a425518fdc0d7e58}
+
+
+true if the enemies have been placed in the game , false if not (only used a trigger) 
+
+\hypertarget{classoctet_1_1_maths___l___systems_a44da9fdd3c673cac831cf894aa02ec46}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!exel@{exel}}
+\index{exel@{exel}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{exel}]{\setlength{\rightskip}{0pt plus 5cm}float octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::exel\hspace{0.3cm}{\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_a44da9fdd3c673cac831cf894aa02ec46}
+
+
+The extrution length for the cyln. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_a6afebf4038c4d8b798e7e35d2b0a9652}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!gamedaytime@{gamedaytime}}
+\index{gamedaytime@{gamedaytime}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{gamedaytime}]{\setlength{\rightskip}{0pt plus 5cm}float octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::gamedaytime\hspace{0.3cm}{\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_a6afebf4038c4d8b798e7e35d2b0a9652}
+
+
+The game day night time (0-\/360) 
+
+\hypertarget{classoctet_1_1_maths___l___systems_aec92a84b2e6a408ffe7bdf34ce3285e4}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!init\+\_\+param@{init\+\_\+param}}
+\index{init\+\_\+param@{init\+\_\+param}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{init\+\_\+param}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::init\+\_\+param\hspace{0.3cm}{\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_aec92a84b2e6a408ffe7bdf34ce3285e4}
+
+
+the initial paramiter for the system 
+
+\hypertarget{classoctet_1_1_maths___l___systems_a0c7beee6e733f6f1912807f2f2912fe8}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!initexel@{initexel}}
+\index{initexel@{initexel}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{initexel}]{\setlength{\rightskip}{0pt plus 5cm}float octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::initexel\hspace{0.3cm}{\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_a0c7beee6e733f6f1912807f2f2912fe8}
+
+
+The initial extrution length. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_acd18538c7b279c111b52f3286be824b3}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!initrad@{initrad}}
+\index{initrad@{initrad}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{initrad}]{\setlength{\rightskip}{0pt plus 5cm}float octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::initrad\hspace{0.3cm}{\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_acd18538c7b279c111b52f3286be824b3}
+
+
+The initial radious. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_a656e4a1c5ecad3857ed35fa9b7d27a53}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!isday@{isday}}
+\index{isday@{isday}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{isday}]{\setlength{\rightskip}{0pt plus 5cm}bool octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::isday\hspace{0.3cm}{\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_a656e4a1c5ecad3857ed35fa9b7d27a53}
+
+
+true is its day, false if night 
+
+\hypertarget{classoctet_1_1_maths___l___systems_a8a58838e93bde57d4d7b1a35cef6e4f2}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!L\+\_\+\+Rules@{L\+\_\+\+Rules}}
+\index{L\+\_\+\+Rules@{L\+\_\+\+Rules}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{L\+\_\+\+Rules}]{\setlength{\rightskip}{0pt plus 5cm}F\+I\+L\+E $\ast$ octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::\+L\+\_\+\+Rules\hspace{0.3cm}{\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_a8a58838e93bde57d4d7b1a35cef6e4f2}
+
+
+The file pointer that we read from. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_aa7cca257e626df634fa52b1a85a1e3d8}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!mat\+\_\+tree@{mat\+\_\+tree}}
+\index{mat\+\_\+tree@{mat\+\_\+tree}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{mat\+\_\+tree}]{\setlength{\rightskip}{0pt plus 5cm}material $\ast$ octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::mat\+\_\+tree\hspace{0.3cm}{\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_aa7cca257e626df634fa52b1a85a1e3d8}
+
+
+The material for the tree. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_a1b1840ca480629312bfa309681d6913c}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!nightnumber@{nightnumber}}
+\index{nightnumber@{nightnumber}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{nightnumber}]{\setlength{\rightskip}{0pt plus 5cm}int octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::nightnumber\hspace{0.3cm}{\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_a1b1840ca480629312bfa309681d6913c}
+
+
+the number of nights that have passed 
+
+\hypertarget{classoctet_1_1_maths___l___systems_ab7bffab6b7ca8de169cccc0dc999a130}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!node@{node}}
+\index{node@{node}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{node}]{\setlength{\rightskip}{0pt plus 5cm}scene\+\_\+node $\ast$ octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::node\hspace{0.3cm}{\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_ab7bffab6b7ca8de169cccc0dc999a130}
+
+
+The node for the mesh. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_af66610095ffa2515df4b7a821783792d}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!number\+\_\+of\+\_\+rules@{number\+\_\+of\+\_\+rules}}
+\index{number\+\_\+of\+\_\+rules@{number\+\_\+of\+\_\+rules}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{number\+\_\+of\+\_\+rules}]{\setlength{\rightskip}{0pt plus 5cm}int octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::number\+\_\+of\+\_\+rules\hspace{0.3cm}{\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_af66610095ffa2515df4b7a821783792d}
+
+
+The number of rules this L-\/\+System has. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_a3ffafcbe960edcaf6255cc3be7fc10af}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!rad@{rad}}
+\index{rad@{rad}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{rad}]{\setlength{\rightskip}{0pt plus 5cm}float octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::rad\hspace{0.3cm}{\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_a3ffafcbe960edcaf6255cc3be7fc10af}
+
+
+The radious of the circle. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_a5c57f1806d42933de86a1d2b2693eb26}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!rules@{rules}}
+\index{rules@{rules}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{rules}]{\setlength{\rightskip}{0pt plus 5cm}hash\+\_\+map$<$ char, char $\ast$ $>$ octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::rules\hspace{0.3cm}{\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_a5c57f1806d42933de86a1d2b2693eb26}
+
+
+The map between the symbols and the rules. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_a3baf90aa95cd3c535fba893641f0cd1e}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!scale@{scale}}
+\index{scale@{scale}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{scale}]{\setlength{\rightskip}{0pt plus 5cm}float octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::scale\hspace{0.3cm}{\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_a3baf90aa95cd3c535fba893641f0cd1e}
+
+
+The scaling factor. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_a446a9be9766e7557d06f243a030ab9bf}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!shader@{shader}}
+\index{shader@{shader}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{shader}]{\setlength{\rightskip}{0pt plus 5cm}param\+\_\+shader $\ast$ octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::shader\hspace{0.3cm}{\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_a446a9be9766e7557d06f243a030ab9bf}
+
+
+The shader for the tree. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_acd98087b379a1b860b1631a6224470e9}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!symbols@{symbols}}
+\index{symbols@{symbols}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{symbols}]{\setlength{\rightskip}{0pt plus 5cm}char octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::symbols\mbox{[}5\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_acd98087b379a1b860b1631a6224470e9}
+
+
+The symbols on the current L-\/\+System. 
+
+\hypertarget{classoctet_1_1_maths___l___systems_a565e71fcec0d1a4d0cca48e99c3b6aca}{\index{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}!var\+\_\+stack@{var\+\_\+stack}}
+\index{var\+\_\+stack@{var\+\_\+stack}!octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems@{octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems}}
+\subsubsection[{var\+\_\+stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\+\_\+stack} $\ast$ octet\+::\+Maths\+\_\+\+L\+\_\+\+Systems\+::var\+\_\+stack\hspace{0.3cm}{\ttfamily [private]}}}\label{classoctet_1_1_maths___l___systems_a565e71fcec0d1a4d0cca48e99c3b6aca}
+
+
+The stack variable in which we push and pop the states. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_maths___l___systems_8h}{Maths\+\_\+\+L\+\_\+\+Systems.\+h}\end{DoxyCompactItemize}
